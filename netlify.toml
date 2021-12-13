@@ -1,12 +1,6 @@
-[build]
-    functions = "functions"
-[[redirects]]
-    from = "/*"
-    to = "/.netlify/functions/:splat"
-    status = 200
-    force = true
-
-[[headers]]
-for = "/*"
-[headers.values]
-Access-Control-Allow-Origin = "*" 
+ [[redirects]]
+  from = "/*"
+  to = "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x7A3716c68B307D87080Ae99A5024cA852799a38A&order_direction=asc"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}

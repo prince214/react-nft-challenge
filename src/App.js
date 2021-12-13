@@ -11,8 +11,7 @@ function App() {
   useEffect(() => {
     const getMyNFTs = async () => {
       const openSeaData = await axios.get(
-        `https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${process.env.REACT_APP_NFT_ACCOUNT_ADDRESS}&order_direction=asc`,
-        { crossdomain: true }
+        `https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${process.env.REACT_APP_NFT_ACCOUNT_ADDRESS}&order_direction=asc`
       );
       setPunkListData(openSeaData.data.assets);
     };
@@ -21,8 +20,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {(punkListData.length > 0) &&
-      (
+      {punkListData.length > 0 && (
         <>
           <Main punkListData={punkListData} selectedPunk={selectedPunk} />
           <PunkList
