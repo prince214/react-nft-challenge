@@ -7,5 +7,5 @@
 ## Local Installation Steps: 
 
 - `npm install`
-- `Create env file with variable REACT_APP_NFT_ACCOUNT_ADDRESS=YOUR_BLOCKCHAIN_ACCOUNT_ADDRESS`
+- Create env file with variable `REACT_APP_NFT_ACCOUNT_ADDRESS=YOUR_BLOCKCHAIN_ACCOUNT_ADDRESS`
 - `npm run start`
