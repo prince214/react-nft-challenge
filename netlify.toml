@@ -1,6 +1,12 @@
- [[redirects]]
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
   from = "/*"
-  to = "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x7A3716c68B307D87080Ae99A5024cA852799a38A&order_direction=asc"
+  to = "/index.html"
   status = 200
-  force = true
-  headers = {Access-Control-Allow-Origin = "*"}
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
