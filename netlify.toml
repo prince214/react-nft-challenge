@@ -1,5 +1,10 @@
-[[headers]]
- # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+[[redirects]]
+  from = "/*"
+  to = "https://react-nft-market001.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
